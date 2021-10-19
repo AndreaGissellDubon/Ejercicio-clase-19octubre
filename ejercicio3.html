@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio3</title>
+</head>
+<body>
+
+    <script>
+    /*
+    Realizar un pequeño juego  con una pregunta de adivinanza dando tres intentos .si logra
+    adivinarmandanos mensaje como felicitacion,de no acertaren los tres intentos mandanos mensajes
+    de que ha perdido.usar ciclo for
+}
+    */
+    var respuesta="TEGUCIGALPA";
+    var acierto=false;
+
+    for(var contador=1;contador<=3;contador++){
+        var respUsuario= prompt("capital de Honduras: ")
+        if(respUsuario.toUpperCase()== respuesta){
+            var acierto=true
+            document.write(`felicidades,acertastes en el intento ${contador}`)
+            break
+        }
+    }
+    if(acierto===false){
+        document.write(`Lo sentimos,ya no tienes intentos`)
+    }
+    </script>
+    
+</body>
+</html>
